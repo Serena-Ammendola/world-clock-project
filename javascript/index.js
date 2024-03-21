@@ -56,7 +56,7 @@ function updateCity(event) {
     "A"
   )}</small></div>
 </div>
-  `;
+<a href="/">Back to homepage</a> `;
 }
 
 updateTime();
@@ -64,3 +64,6 @@ setInterval(updateTime, 1000);
 
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change", updateCity);
+
+updateCity();
+setInterval(updateCity, 1000);
